@@ -1,0 +1,24 @@
+用户表： username password
+频道表：id,name
+文章信息表：title  source   status（状态为0或1,0在文章管理中显示，1在审核管理中显示）  
+           channel_id(频道表id)   pseudonym(作者表中的笔名，你看存什么合适，是不是存id更合适)
+作者表： wtname    pseudonym    mobile     cipher     mailbox     address 
+
+
+
+
+1.用用户名和密码 ---用token进行登录      token  string必须用户token令牌
+
+   返回数据 username
+
+
+2.通过接口获取有那几个频道    返回channels频道（id,name）
+
+
+
+
+3.通过接口获取到状态为1的文章列表信息           文章总数
+
+
+
+4.修改文章     返回data里面是 id
